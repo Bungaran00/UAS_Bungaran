@@ -1,0 +1,75 @@
+#Program pertama
+angka = 10
+if (angka > 2) :
+    print (angka, "adalah angka lebih besar dari 5")
+else :
+    print(angka, "sama dengan  nilai angka 5")
+
+# Program kedua
+var1 = 20 + 2j
+if (type(var1) == int) :
+    print('Tipe variabel ini adalah Integer')
+
+# Program Ketiga
+var1 = 0, 1.0, 90 +3j #gabungan dari int,float dan complex
+if (type(var1) == float):
+    print("Tipe variabel  Float")
+elif (type(var1) == int):
+    print("Tipe variabel Integer")
+elif (type(var1) == str):
+    print("Tipe variabel String")
+elif (type(var1) == bool):
+    print("Type variabel Bool")
+elif (type(var1) == complex):
+    print("Tipe variable Complex")
+elif (type(var1) == tuple):
+    print("Tipe variable Tuple")
+elif (type(var1) == dict):
+    print("Tipe variable Dictionaries")
+elif (type(var1) == list):
+    print("Tipe variable List")
+elif (type(var1) == bytes):
+    print("Tipe variable bytes")
+else :
+    print("Tipe varibel yang belum diketahui") # Tipe variabel Tuple
+
+# Program keempat
+Buku = 9
+if (Buku >= 4):
+  print ("Saya ingin membeli buku.")
+  if ( Buku <= 6 or Buku >= 8):
+      print("Harga buku dijual seharga Rp10.000") # Pilihan harga buku pertama
+  else:
+      print("Harga buku dijual seharga Rp35.000") # Pilihan harga buku kedua
+else:
+    print ("Saya tidak ingin membeli buku.")
+
+
+print(10*5)
+
+# Program Kelima
+class Orang:
+    	def __init__(self, nama, usia, alamat, gender):
+		self.nama = nama
+		self.usia = usia
+		self.alamat = alamat
+		self.gender = gender        
+	def Nama(self):
+		print("Nama " + self.nama)       
+	def Usia(self):
+		print("Usia " + str(self.usia))
+	def Alamat(self):
+		print("Alamat " + self.alamat)
+	def Gender(self):
+		print("Gender " + self.gender)
+	def print(self):
+		print(self.nama+", "+str(self.usia)+", "+self.alamat+", "+self.gender)
+        
+#Penggunaan
+p1 = Orang("Bima", 20, "Medan", "Laki")
+p2 = Orang("Bunga", 25, "Tanjungmorawa", "Perempuan")
+p3 = Orang("Rio", 34, "Palembang", "laki")
+
+p1.print()
+p2.print()
+p3.print()
